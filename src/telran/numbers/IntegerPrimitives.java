@@ -13,7 +13,9 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthByte() {
-		// TODO Auto-generated method stub
+		//TODO
+		//1. solution of copy/paste
+		//2. Bonus solution with call the method getLength with passing some value
 		return -1;
 	}
 
@@ -31,7 +33,9 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthChar() {
-		// TODO Auto-generated method stub
+		//TODO
+		//1. solution of copy/paste
+		//2. Bonus solution with call the method getLength with passing some value
 		return -1;
 	}
 
@@ -49,7 +53,9 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthShort() {
-		// TODO Auto-generated method stub
+		//TODO
+		//1. solution of copy/paste
+		//2. Bonus solution with call the method getLength with passing some value
 		return -1;
 	}
 
@@ -64,7 +70,9 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthInt() {
-		// TODO Auto-generated method stub
+		//TODO
+		//1. solution of copy/paste
+		//2. Bonus solution with call the method getLength with passing some value
 		return -1;
 	}
 
@@ -82,7 +90,22 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthLong() {
-		// TODO Auto-generated method stub
+		//TODO
+		//1. solution of copy/paste
+		//2. Bonus solution with call the method getLength with passing some value
+		return -1;
+	}
+	/**
+	 * 
+	 * @param x -> you should understand what 'x' is
+	 * @return length of any type in accordance to the x
+	 * length is number of the bytes of any type
+	 * long x
+	 */
+	private static int getLength() {
+		//TODO
+		//1. solution of copy/paste
+		//2. solution with call the method getLength with passing some value
 		return -1;
 	}
 
