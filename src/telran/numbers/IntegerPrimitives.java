@@ -3,20 +3,20 @@ package telran.numbers;
 public class IntegerPrimitives {
 
 	public static byte getMaxByte() {
-		// TODO Auto-generated method stub
-		return -1;
+		byte res = 1;
+		while(res > 0) {
+			res = (byte) (res * 2);
+		}
+		return (byte) (res - 1);
 	}
 
 	public static byte getMinByte() {
-		// TODO Auto-generated method stub
-		return -1;
+		return (byte) (getMaxByte() + 1);
 	}
 
 	public static int getLengthByte() {
-		//TODO
-		//1. solution of copy/paste
-		//2. Bonus solution with call the method getLength with passing some value
-		return -1;
+		return getLength(Byte.SIZE);
+		//return getLength2(getMaxByte());
 	}
 
 	public static char getMaxChar() {
@@ -33,14 +33,12 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthChar() {
-		//TODO
-		//1. solution of copy/paste
-		//2. Bonus solution with call the method getLength with passing some value
-		return -1;
+		return getLength(Character.SIZE);
+		//return getLength2(getMaxChar());
 	}
 
 	public static short getMaxShort() {
-		long res = 1;
+		short res = 1;
 		while(res > 0) {
 			res = (short) (res * 2);
 		}
@@ -48,32 +46,29 @@ public class IntegerPrimitives {
 	}
 
 	public static short getMinShort() {
-		// TODO Auto-generated method stub
-		return -1;
+		return (short) (getMaxShort() + 1);
 	}
 
 	public static int getLengthShort() {
-		//TODO
-		//1. solution of copy/paste
-		//2. Bonus solution with call the method getLength with passing some value
-		return -1;
+		return getLength(Short.SIZE);
+		//return getLength2(getMaxShort());
 	}
 
 	public static int getMaxInt() {
-		// TODO Auto-generated method stub
-		return -1;
+		int res = 1;
+		while(res > 0) {
+			res =  res * 2;
+		}
+		return res - 1;
 	}
 
 	public static int getMinInt() {
-		// TODO Auto-generated method stub
-		return -1;
+		return (getMaxInt() + 1);
 	}
 
 	public static int getLengthInt() {
-		//TODO
-		//1. solution of copy/paste
-		//2. Bonus solution with call the method getLength with passing some value
-		return -1;
+		return getLength(Integer.SIZE);
+		//return getLength2(getMaxInt());
 	}
 
 	public static long getMaxLong() {
@@ -85,28 +80,25 @@ public class IntegerPrimitives {
 	}
 
 	public static long getMinLong() {
-		// TODO Auto-generated method stub
-		return -1;
+		return (getMaxLong() + 1);
 	}
 
 	public static int getLengthLong() {
-		//TODO
-		//1. solution of copy/paste
-		//2. Bonus solution with call the method getLength with passing some value
-		return -1;
+		return getLength(Long.SIZE);
+		//return getLength2(getMaxLong());
 	}
-	/**
-	 * 
-	 * @param x -> you should understand what 'x' is
-	 * @return length of any type in accordance to the x
-	 * length is number of the bytes of any type
-	 * long x
-	 */
-	private static int getLength() {
-		//TODO
-		//1. solution of copy/paste
-		//2. solution with call the method getLength with passing some value
-		return -1;
+	//Option-1
+	private static int getLength(long x) {
+			return (int) (x/8);
+	}
+	//Option-2
+	private static int getLength2(long x) {
+		int count;
+		for(count = 1; x > 0; count++) {
+			long temp = x/2;
+			x = temp;
+		}
+		return count / 8;
 	}
 
 }
