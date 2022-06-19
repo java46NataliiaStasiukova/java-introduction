@@ -15,8 +15,7 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthByte() {
-		return getLength(Byte.SIZE);
-		//return getLength2(getMaxByte());
+		return getLength(getMaxByte());
 	}
 
 	public static char getMaxChar() {
@@ -33,8 +32,7 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthChar() {
-		return getLength(Character.SIZE);
-		//return getLength2(getMaxChar());
+		return getLength(getMaxChar());
 	}
 
 	public static short getMaxShort() {
@@ -50,8 +48,7 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthShort() {
-		return getLength(Short.SIZE);
-		//return getLength2(getMaxShort());
+		return getLength(getMaxShort());
 	}
 
 	public static int getMaxInt() {
@@ -67,8 +64,7 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthInt() {
-		return getLength(Integer.SIZE);
-		//return getLength2(getMaxInt());
+		return getLength(getMaxInt());
 	}
 
 	public static long getMaxLong() {
@@ -84,15 +80,9 @@ public class IntegerPrimitives {
 	}
 
 	public static int getLengthLong() {
-		return getLength(Long.SIZE);
-		//return getLength2(getMaxLong());
+		return getLength(getMaxLong());
 	}
-	//Option-1
 	private static int getLength(long x) {
-			return (int) (x/8);
-	}
-	//Option-2
-	private static int getLength2(long x) {
 		int count;
 		for(count = 1; x > 0; count++) {
 			long temp = x/2;
