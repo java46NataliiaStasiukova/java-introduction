@@ -19,7 +19,8 @@ class ArrayIntTests {
 	void addNumberTest() {
 		int expected[] = {1, 2, -10, 20};
 		int ar[] = {1, 2, -10};
-		//assertTrue(expected == ArrayInt.addNumber(ar, 20));//wrong test as the references will be di....?
+		assertEquals(1, ArrayInt.indexOf(ar, 2));
+		//assertTrue(expected == ArrayInt.addNumber(ar, 20));
 		assertArrayEquals(expected, ArrayInt.addNumber(ar, 20));
 	}
 	@Test
