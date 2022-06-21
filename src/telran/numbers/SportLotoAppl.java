@@ -10,18 +10,24 @@ public class SportLotoAppl {
 		int min = 1, max = 49;
 		int res[] = new int[7];
 		for(int i = 0; i < res.length; i++) {
-			res[i] = getRandomNumber(min, max);
+			int temp = 0;
+			int contains = 0;
+		while(contains <= 0) {
+			temp = getRandomNumber(min, max);
+			contains = searchNumber(res, temp);
+			}			
+			res[i] = temp;
 			System.out.print(res[i] + " ");
 		}
-//Option without using array:
-//		int min = 1, max = 49, i = 7;
-//		while(i > 0) {
-//			System.out.print(getRandomNumber(min, max) + " ");
-//			i--;
-//		}
-		
 	}
-	//helper method for getting one random number in the range [min - max]
+	private static int searchNumber(int[] ar, int temp) {
+		for(int i = 0; i < ar.length; i++) {
+			if(ar[i] == temp) {
+				return -1;
+			}
+		}
+		return 1;
+	}
 	private static int getRandomNumber(int min, int max) {
 		return (int) (min + Math.random() * (max - min + 1));
 	}
