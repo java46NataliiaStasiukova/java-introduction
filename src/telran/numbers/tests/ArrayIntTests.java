@@ -2,7 +2,7 @@ package telran.numbers.tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ import telran.numbers.ArrayInt;
 
 class ArrayIntTests {
 	private static final int SMALL_N_NUMBERS = 100;
-	private static final int LARGE_N_NUMBERS = 10_000;
+	private static final int LARGE_N_NUMBERS = 100_000;
 	private static final int N_RUNS = 10000;
 
 	@Test
