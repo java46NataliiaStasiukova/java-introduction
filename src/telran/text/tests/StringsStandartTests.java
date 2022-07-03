@@ -11,7 +11,7 @@ class StringsStandartTests {
 	@Test
 	void stringArraysTest() throws UnsupportedEncodingException {
 		String strEnglish = "hello";
-		String strHebrew = "ùìåí";
+		String strHebrew = "שלום";
 		char arCh[] = {'h', 'e', 'l','l','o'};
 		byte arBytes[] = {'h', 'e', 'l','l','o'};
 		assertArrayEquals(arCh, strEnglish.toCharArray());
